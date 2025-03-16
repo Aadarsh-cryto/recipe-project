@@ -1,0 +1,143 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+   
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);  
+    background-color: #D9AFD9;
+
+
+}
+.navcontainer{
+    width: 100vw;
+    /* background-color: rgba(135, 135, 189, 0.466);  */
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-color: #8EC5FC;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+    padding-right: 2rem ;
+}
+#navstyle{
+    width: 100%;
+    padding: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    list-style-type: none;
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#navlogo{
+    font-size: 2.8rem;
+    color: beige;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ #navitems{
+    display: flex;
+    gap: 30px;
+ } 
+.footerbox{
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-color: #8EC5FC;
+   
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+} 
+.footerbox p{
+    color: azure;
+    font-size: 1.5rem;
+
+}
+.contentbox{
+    width: 70%;
+    margin: auto;
+    /* border: solid 1px black;  */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 3px 3px 30px black;
+}
+.item{
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.rightbox{
+    position: relative;
+    /* overflow: hidden;  */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    transition: all 0.6s linear 0s;
+    box-shadow: 1px 1px 10px black;
+    border: 2px solid black;
+}
+.rightbox img{
+    height: 300px;
+    /* width: ; */
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+.rightbox:hover{
+    transform: scale(1.1);
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.ing{
+    font-size: 1.2rem;
+}
+.rec{
+    font-size: 1.3rem;
+}
+.rightbox .overplay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(87, 89, 93, 0.471); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   /* jb hover nahi kr raha toh tb nahi dikhna chaiye  */
+   transition: all 0.3s linear 0s;
+}
+ 
+.rightbox:hover .overplay{
+    opacity: 1;
+}  
+.rightbox .overplay span{
+    color: white;
+    font-size: 1.2rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+  
